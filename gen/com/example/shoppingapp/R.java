@@ -256,10 +256,10 @@ containing a value of this type.
         public static final int amountTextLabel=0x7f050019;
         public static final int amountTextView=0x7f05000a;
         public static final int answer=0x7f05001a;
-        public static final int button1=0x7f050026;
-        public static final int button2=0x7f050027;
-        public static final int button3=0x7f050028;
-        public static final int button4=0x7f050029;
+        public static final int button1=0x7f050029;
+        public static final int button2=0x7f050028;
+        public static final int button3=0x7f050027;
+        public static final int button4=0x7f050026;
         public static final int buttonadd=0x7f050006;
         public static final int cbk=0x7f050013;
         public static final int deletebutton=0x7f050020;
@@ -300,12 +300,11 @@ containing a value of this type.
         public static final int add_item=0x7f030001;
         public static final int converter_checkbox=0x7f030002;
         public static final int converter_curr=0x7f030003;
-        public static final int edit_item=0x7f030004;
-        public static final int edit_items=0x7f030005;
-        public static final int google_map=0x7f030006;
-        public static final int item_list_entry=0x7f030007;
-        public static final int photo_view=0x7f030008;
-        public static final int start_app=0x7f030009;
+        public static final int edit_items=0x7f030004;
+        public static final int google_map=0x7f030005;
+        public static final int item_list_entry=0x7f030006;
+        public static final int photo_view=0x7f030007;
+        public static final int start_app=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f090000;
