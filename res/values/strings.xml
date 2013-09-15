@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping App</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="add_items">Add Items</string>
+    <string name="Item">Item:</string>
+    <string name="Amount">Amount:</string>
+    <string name="Price">Price:</string>
+    <string name="Where_to_buy">Where to buy:</string>
+   
+    
+    <string name="my_shopping_list_title">My shopping list</string>
+    <string name="add_button">ADD</string>
+    
+    <string name="save_data">SAVE</string>
+    
+    <string name="edit_item_title">Edit Item</string>
+    <string name="edit_button">EDIT</string>
+    <string name="delete_button">DELETE</string>
+       <string name="shopping_button">My shopping list</string>
+    <string name="converter_button">Currency Converter</string>
+    <string name="photo_button">Photo</string>
+    
+    
+    <string name="amount">AMOUNT:</string>
+    <string name="to">TO:</string>
+    <string name="from">FROM:</string>
+    <string name="button_swap"></string>
+    <string name="map_button">Map</string>
+   
+          
+     
+     
+    <string name="toLabel"></string>
+    <string name="fromLabel"></string>
+    
+    <string name="map_title">Google Map</string>
+    <string name="supermarkets">I love shopping</string>
+     <string name="map">Google Map</string>
+       <string name="flagview">Flag</string>
+       <string name="nok">Nowegian krone</string>
+       <string name="euro">European Euro</string>
+
+</resources>

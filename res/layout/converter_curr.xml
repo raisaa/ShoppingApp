@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC"
+    tools:context=".MainActivity" >    
+    
+    	 <Button
+    	     android:id="@+id/selectConvertFrom"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_alignLeft="@+id/fromSelectLabel"
+    	     android:layout_alignParentRight="true"
+    	     android:layout_below="@+id/fromSelectLabel"
+    	     android:background="@drawable/button_draw"
+    	     android:focusable="false"
+    	     android:text="@string/nok"
+    	     android:textColor="@color/amostWhite" />
+    	
+    	 <TextView
+             android:id="@+id/fromAmountLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/fromInput"
+             android:layout_below="@+id/selectConvertFrom"
+             android:layout_marginTop="12dp"
+             android:layout_marginBottom="10dp"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:inputType="none"
+             android:text="@string/amount" />
+    	 
+         <EditText
+             android:id="@+id/fromInput"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/fromAmountLabel"
+             android:layout_marginLeft="15dip"
+             android:background="@drawable/edit_text"
+              android:layout_marginTop="5dp"
+             android:ems="10"
+             android:gravity="center"
+             android:inputType="numberDecimal"
+             android:textSize="42sp" />
+                  
+         <Button
+             android:id="@+id/selectConvertTo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/amountTextLabel"
+             android:layout_alignRight="@+id/answer"
+             android:layout_below="@+id/toTextLabel"
+             android:background="@drawable/button_draw"
+             android:focusable="false"
+              android:layout_marginTop="12dp"
+             android:focusableInTouchMode="false"
+             android:text="@string/euro"
+             android:textColor="@color/amostWhite" />
+
+         <TextView
+             android:id="@+id/toTextLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/selectConvertTo"
+             android:layout_alignRight="@+id/fromSelectLabel"
+             android:layout_alignTop="@+id/swapButton"
+             android:layout_marginBottom="10dp"
+              android:layout_marginTop="4dp"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:inputType="none"
+             android:text="@string/to" />
+
+         <ImageButton
+             android:id="@+id/swapButton"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/fromInput"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="3dp"
+             android:background="@null"
+             android:contentDescription="@string/flagview"
+             android:src="@drawable/swap_button"
+             android:text="@string/button_swap" />
+
+         <TextView
+             android:id="@+id/fromSelectLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/fromAmountLabel"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="14dp"
+             android:layout_marginBottom="10dp"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:inputType="none"
+             android:text="@string/from" />
+
+         <ImageView
+             android:id="@+id/fromImage"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignRight="@+id/fromAmountLabel"
+             android:layout_alignTop="@+id/selectConvertFrom"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/nok_flag" 
+             android:contentDescription="@string/flagview"/>
+
+         <ImageView
+             android:id="@+id/toImage"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignLeft="@+id/fromImage"
+             android:layout_alignTop="@+id/selectConvertTo"
+             android:layout_marginTop="3dp"
+             android:src="@drawable/eur_flag" 
+             android:contentDescription="@string/flagview"/>
+
+         <EditText
+             android:id="@+id/answer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/amountTextLabel"
+             android:layout_below="@+id/amountTextLabel"
+             android:layout_marginTop="15dp"
+             android:background="@drawable/edit_text"
+             android:ems="10"
+             android:enabled="true"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:gravity="center"
+             android:inputType="numberDecimal"
+             android:textSize="42sp" >
+
+             <requestFocus />
+         </EditText>
+
+         <TextView
+             android:id="@+id/amountTextLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/fromInput"
+             android:layout_below="@+id/selectConvertTo"
+             android:layout_marginTop="15dp"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:inputType="none"
+             android:text="@string/amount" />
+         
+</RelativeLayout>

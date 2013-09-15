@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/bg8" >
+    
+ <TextView
+     android:id="@+id/editNewItemsTittle"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:background="#000000"
+     android:text="@string/edit_item_title"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editNewItemsTittle"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/Item" />
+
+    <EditText
+        android:id="@+id/textItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemTextView"
+        android:layout_alignBottom="@+id/itemTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text" >
+     <requestFocus />
+     
+     </EditText>
+     
+     <TextView
+         android:id="@+id/amountTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/itemTextView"
+         android:layout_marginTop="26dp"
+         android:paddingLeft="@dimen/padding_5dp"
+         android:text="@string/Amount" />
+
+    <EditText
+        android:id="@+id/textAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amountTextView"
+        android:layout_alignBottom="@+id/amountTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+    
+      <TextView
+          android:id="@+id/priceTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/amountTextView"
+          android:layout_marginTop="26dp"
+          android:paddingLeft="@dimen/padding_5dp"
+          android:text="@string/Price" />
+
+    <EditText
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/priceTextView"
+        android:layout_alignBottom="@+id/priceTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+    
+     <TextView
+         android:id="@+id/placeTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/priceTextView"
+         android:layout_marginTop="26dp"
+         android:paddingLeft="@dimen/padding_5dp"
+         android:text="@string/Where_to_buy" />
+
+    <EditText
+        android:id="@+id/textPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/placeTextView"
+        android:layout_alignBottom="@+id/placeTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editbutton"
+        android:layout_alignBottom="@+id/editbutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:background="#006600"
+        android:onClick="removeItems"
+        android:text="@string/delete_button"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/editbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPlace"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/itemTextView"
+        android:background="#006600"
+        android:onClick="editItems"
+        android:text="@string/edit_button"
+        android:textColor="#FFFFFF" />
+   
+   </RelativeLayout>
